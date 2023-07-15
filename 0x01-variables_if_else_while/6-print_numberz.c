@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -7,14 +8,12 @@
 
 int main(void)
 {
-	int c;
+	int num;
 
-	c = 0;
-	while
-		(c < 10) {
-			putchar(c + '0');
-			c++;
-		}
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
 	putchar('\n');
+	
 	return(0);
 }
