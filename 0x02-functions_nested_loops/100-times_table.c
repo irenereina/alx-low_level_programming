@@ -3,7 +3,7 @@
 /**
  * print_times_table - Prints the times table of the input.
  * starting with 0.
- * @n: Tyhe value of the time table to be printed.
+ * @n: The value of the times table to be printed.
  */
 
 void print_times_table(int n)
@@ -13,7 +13,7 @@ void print_times_table(int n)
 	
 	if (n >= 0 && n <= 15)
 	{
-	for  (num = 0; num <= n; num++)
+	for (num = 0; num <= n; num++)
 	{
 	_putchar('0');
 	for (mult = 1; mult <= n; mult++)
@@ -22,6 +22,8 @@ void print_times_table(int n)
 	_putchar(' ');
 	prod = num * mult;
 	if (prod <= 99)
+	_putchar(' ');
+	if (prod <= 9)
 	_putchar(' ');
 	if (prod >= 100)
 	{
